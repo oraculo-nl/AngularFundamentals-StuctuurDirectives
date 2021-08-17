@@ -18,4 +18,8 @@ export class AppComponent {
   public klant1: Klant = new Klant([8378374, 345345, 34545]);
   public klant2: Klant = new Klant([]);
   superhero = 'Spiderman';
+  condition = true;
+  onClick():void {
+    this.condition = !this.condition;
+  }
 }

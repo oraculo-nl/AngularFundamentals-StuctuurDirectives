@@ -26,8 +26,14 @@
 <ul [ngSwitch]="1+1">
   <li *ngSwitchCase="2">Groot</li>
   <li *ngSwitchCase="3-1">Ironman</li>
-  <li *ngSwitchCase="3">Hulk</li>
+  <li *ngSwitchCase="5-3">Hulk</li>
   <li *ngSwitchCase="5">Thor</li>
   <li *ngSwitchCase="7">Spiderman</li>
   <li *ngSwitchDefault>Batman</li>
 </ul>
+
+<button (click)="onClick()">Click to hide/show</button>
+<p *appEigenDirective="condition">Some text</p>
+<br>
+
+
